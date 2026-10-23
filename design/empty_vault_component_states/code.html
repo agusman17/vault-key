@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#002c47","on-error-container":"#ffdad6","surface-variant":"#2d3449","on-primary-fixed-variant":"#004b73","outline-variant":"#3f4850","primary-container":"#3198dc","inverse-on-surface":"#283044","on-surface":"#dae2fd","error":"#ffb4ab","on-surface-variant":"#bfc7d2","on-secondary-fixed-variant":"#005236","on-tertiary-fixed-variant":"#3323cc","tertiary-fixed-dim":"#c3c0ff","on-primary-fixed":"#001d31","primary-fixed-dim":"#93ccff","tertiary-container":"#8582ff","surface-container-low":"#131b2e","secondary-fixed":"#6ffbbe","surface-container-lowest":"#060e20","secondary-container":"#00a572","tertiary":"#c3c0ff","inverse-primary":"#006398","primary":"#93ccff","on-secondary-fixed":"#002113","on-secondary-container":"#00311f","surface-tint":"#93ccff","on-primary":"#003351","inverse-surface":"#dae2fd","surface":"#0b1326","background":"#0b1326","on-error":"#690005","surface-bright":"#31394d","outline":"#89929b","surface-container-highest":"#2d3449","on-tertiary-container":"#180092","surface-dim":"#0b1326","on-background":"#dae2fd","primary-fixed":"#cce5ff","surface-container-high":"#222a3d","secondary":"#4edea3","on-tertiary":"#1d00a5","error-container":"#93000a","on-tertiary-fixed":"#0f0069","on-secondary":"#003824","surface-container":"#171f33","tertiary-fixed":"#e2dfff","secondary-fixed-dim":"#4edea3"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-desktop":"2rem","space-lg":"1.5rem","space-sm":"0.5rem","margin":"1rem","space-xs":"0.25rem","space-md":"1rem","gutter-desktop":"1.5rem","space-xl":"2.5rem","gutter":"1rem"},fontFamily:{"body-lg":["Geist"],"headline-xl-mobile":["Geist"],"body-sm":["Geist"],"label-lg":["Geist"],"label-md":["Geist"],"body-md":["Geist"],"headline-xl":["Geist"],"headline-lg":["Geist"],"headline-md":["Geist"],"code-sm":["JetBrains Mono"],"code-md":["JetBrains Mono"],"code-lg":["JetBrains Mono"]},fontSize:{"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"400"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.375rem","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"500"}],"code-sm":["0.75rem",{"lineHeight":"1.125rem","letterSpacing":"0.02em","fontWeight":"400"}],"code-md":["0.875rem",{"lineHeight":"1.375rem","letterSpacing":"0.04em","fontWeight":"400"}],"code-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0.05em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="p-space-md pb-space-sm"><div class="flex items-center justify-between mb-space-sm"><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Active Vault</span><span class="material-symbols-outlined text-outline text-body-sm">swap_vert</span></div><button class="w-full flex items-center justify-between bg-surface-container px-space-md py-space-sm rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-body-lg">folder_special</span><span class="font-label-lg text-label-lg text-on-surface">Personal Vault</span></div><span class="font-code-sm text-code-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant">48</span></button></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs space-y-space-md"><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg"><div class="px-space-sm pb-space-xs font-label-md text-label-md text-outline uppercase tracking-wider">Credentials</div><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-label-lg font-bold rounded-lg" data-path="all-items" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">shield</span><span class="font-label-lg text-label-lg">All Items</span></div><span class="font-code-sm text-code-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant">48</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="logins-passwords" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">key</span><span class="font-label-lg text-label-lg">Logins & Passwords</span></div><span class="font-code-sm text-code-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant">36</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="passkeys-2fa" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">verified_user</span><span class="font-label-lg text-label-lg">Passkeys & 2FA</span></div><span class="font-code-sm text-code-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant">6</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="secure-notes" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">sticky_note_2</span><span class="font-label-lg text-label-lg">Secure Notes</span></div><span class="font-code-sm text-code-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant">4</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="payment-cards" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">credit_card</span><span class="font-label-lg text-label-lg">Payment Cards</span></div><span class="font-code-sm text-code-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant">2</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="identity-docs" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">badge</span><span class="font-label-lg text-label-lg">Identity & Docs</span></div></a></nav><div class="space-y-1"><div class="px-space-sm pb-space-xs font-label-md text-label-md text-outline uppercase tracking-wider">Organization</div><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="favorites" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg">star</span><span class="font-label-lg text-label-lg">Favorites</span></div><span class="font-code-sm text-code-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface-variant">8</span></a><div class="pt-space-xs"><div class="px-space-sm py-1 font-label-md text-label-md text-outline">Folders</div><div class="pl-space-md space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-1 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm" data-path="folder-work" href="#"><span class="material-symbols-outlined text-body-sm">folder</span>Work</a><a class="flex items-center gap-space-sm px-space-sm py-1 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm" data-path="folder-personal" href="#"><span class="material-symbols-outlined text-body-sm">folder</span>Personal</a><a class="flex items-center gap-space-sm px-space-sm py-1 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm" data-path="folder-cloud" href="#"><span class="material-symbols-outlined text-body-sm">cloud</span>Cloud & Infra</a><a class="flex items-center gap-space-sm px-space-sm py-1 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-body-sm text-body-sm" data-path="folder-crypto" href="#"><span class="material-symbols-outlined text-body-sm">currency_bitcoin</span>Crypto</a></div></div><div class="pt-space-xs"><div class="px-space-sm py-1 font-label-md text-label-md text-outline">Tags</div><div class="flex flex-wrap gap-1 px-space-sm pt-1"><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm hover:text-primary cursor-pointer">#production</span><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm hover:text-primary cursor-pointer">#banking</span><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm hover:text-error cursor-pointer">#urgent</span></div></div></div><div class="space-y-1"><div class="px-space-sm pb-space-xs font-label-md text-label-md text-outline uppercase tracking-wider">Security Health & Tools</div><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="security-dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg text-secondary">speed</span><span class="font-label-lg text-label-lg">Security Health</span></div><span class="font-code-sm text-code-sm text-secondary bg-secondary-container/20 px-space-xs py-0.5 rounded">98%</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="breach-watch" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-lg text-error">warning</span><span class="font-label-lg text-label-lg">Breach Watch</span></div><span class="w-2 h-2 rounded-full bg-error"></span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="password-generator" href="#"><span class="material-symbols-outlined text-body-lg">auto_mode</span><span class="font-label-lg text-label-lg">Password Generator</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="trash" href="#"><span class="material-symbols-outlined text-body-lg">delete</span><span class="font-label-lg text-label-lg">Recycle Bin</span></a></div></div><div class="p-space-md bg-surface-container-lowest flex flex-col gap-space-sm"><div class="flex items-center justify-between font-body-sm text-body-sm text-outline"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Zero-Knowledge Synced</span></div><span class="material-symbols-outlined text-body-sm text-secondary">lock</span></div><div class="flex items-center gap-space-xs"><button class="flex-1 flex items-center justify-center gap-space-xs py-space-sm bg-error-container text-on-error-container rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity" type="button"><span class="material-symbols-outlined text-body-md">lock</span><span>Lock Vault</span><span class="font-code-sm text-code-sm opacity-70 ml-1">Ctrl+L</span></button><a class="p-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-body-md">settings</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-md flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="CipherVault Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WPGg8rVgNkOCAWkf4IQh8gO77I2xT7S6h7HNR9wUQKyNMH30Diy9Qr3GDmJRROgEnHmXJdKByaX_AVweqM45aZujdYv5iC-rQlduNTxW20N9VfzDOI-yL_UiIr0trM-9UFIsrpgO74SNF23qLnAkSEDwFcSystWmhuCQTaGL28BWg5F2XSDLCDwAn37A1fLcfq0IHqlzni0U4CRkHFnD1t2WkcsjmBAdWIEZhUI3TdiQLT0T_g01JYjV-3"/><span class="font-headline-md text-headline-md font-semibold text-on-surface">CipherVault</span></div><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-code-sm text-code-sm text-on-surface-variant">Zero-Knowledge AES-256 Vault: Unlocked</span></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-body-lg pointer-events-none">search</span><input class="w-full bg-surface-container-low text-on-surface placeholder-outline pl-10 pr-16 py-space-xs rounded-lg font-body-sm text-body-sm focus:outline-none focus:bg-surface-container" placeholder="Search vault items (logins, notes, cards)..." type="text"/><span class="absolute right-space-sm font-code-sm text-code-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-outline">⌘K</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-xs rounded-lg font-label-lg text-label-lg hover:bg-primary-fixed transition-colors" type="button"><span class="material-symbols-outlined text-body-md">add</span><span>New Item</span></button><button class="p-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" onclick="document.documentElement.classList.toggle('dark')" title="Toggle Theme" type="button"><span class="material-symbols-outlined text-body-lg dark:hidden">dark_mode</span><span class="material-symbols-outlined text-body-lg hidden dark:inline">light_mode</span></button><button class="relative p-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" title="Security Alerts" type="button"><span class="material-symbols-outlined text-body-lg">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYQgL4Cj1-klUqju7ao9n10V9-qdMrW4UMqNUC91H23eCO9skOHN8D_3AwqB3NOzaPQgOXEN4srvf_iRm4IbLE5d4wZTu4fvDx_iMBLw3k9V0sm4UqFrK6iY2yRgAO_XN40JZv6oaL6yNZHvnCdzZH32TMGXAsizU9TV4dWFT1m3n2hKwXpXRQMJq2YXphWPMbgco6p2d5kXspZtY8GF5N1aItdfNhGI6qLgYf0usZ0nev3QkVxygoag"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">alex.morgan@acme.dev</span><span class="font-code-sm text-code-sm text-secondary font-medium leading-none">Pro Plan</span></div></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-gutter-desktop py-space-lg flex flex-col gap-space-xl max-w-7xl mx-auto w-full">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm text-primary uppercase tracking-widest bg-surface-container-high px-space-xs py-0.5 rounded">PRD SPEC F-03 • F-126</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Local Salt: 0x4f...9e21</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl font-semibold text-on-surface tracking-tight">Personal Vault</h1>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-body-sm text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>0 items stored — Zero-knowledge AES-256 client encryption ready</span>
+</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-bright text-on-surface px-space-md py-space-sm rounded-lg font-label-lg text-label-lg shadow-sm transition-all" onclick="openImportModal()" type="button">
+<span class="material-symbols-outlined text-body-md">cloud_download</span>
+<span>Import Vault Data</span>
+</button>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-fixed text-on-primary px-space-md py-space-sm rounded-lg font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all" onclick="openNewCredentialModal()" type="button">
+<span class="material-symbols-outlined text-body-md">add_circle</span>
+<span>New Credential</span>
+</button>
+</div>
+</div>
+<div class="relative overflow-hidden bg-surface-container-low rounded-xl p-space-xl shadow-xl flex flex-col items-center text-center">
+<div class="absolute -top-32 -left-32 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="relative mb-space-lg flex items-center justify-center">
+<div class="absolute w-44 h-44 rounded-full bg-surface-container-high animate-pulse opacity-40"></div>
+<div class="absolute w-36 h-36 rounded-full bg-primary/10"></div>
+<svg class="relative w-32 h-32 text-primary" fill="none" viewbox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+<circle cx="64" cy="64" r="58" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.2" stroke-width="2"></circle>
+<circle cx="64" cy="64" fill="currentColor" fill-opacity="0.06" r="46" stroke="currentColor" stroke-opacity="0.6" stroke-width="2"></circle>
+<circle cx="64" cy="64" fill="#0b1326" r="32"></circle>
+<path d="M46 60C46 50.0589 54.0589 42 64 42C73.9411 42 82 50.0589 82 60V66H46V60Z" stroke="#4edea3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<rect fill="#3198dc" height="32" rx="4" width="44" x="42" y="66"></rect>
+<circle cx="64" cy="80" fill="#002c47" r="4"></circle>
+<path d="M64 84V89" stroke="#002c47" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="64" cy="64" r="54" stroke="#4edea3" stroke-dasharray="16 120" stroke-linecap="round" stroke-width="2"></circle>
+</svg>
+<span class="absolute -bottom-1 -right-1 px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-code-sm text-code-sm font-semibold tracking-wider shadow-sm">AES-GCM</span>
+</div>
+<div class="max-w-xl mx-auto flex flex-col gap-space-xs z-10">
+<div class="flex items-center justify-center gap-2">
+<span class="font-code-sm text-code-sm text-secondary bg-secondary-container/20 text-secondary px-space-sm py-0.5 rounded-full uppercase tracking-wider font-semibold">Zero-Knowledge Storage</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-semibold text-on-surface tracking-tight mt-1">Your Zero-Knowledge Vault is Empty</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto">
+          All credentials you add here are client-encrypted on your device using your Master Key with <span class="text-on-surface font-medium">AES-256</span> before sync. No one else, not even CipherVault operators, can decrypt them.
+        </p>
+</div>
+<div class="mt-space-lg flex flex-wrap items-center justify-center gap-space-md z-10">
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-fixed text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm rounded-lg shadow-md hover:scale-[1.01] transition-transform" onclick="openNewCredentialModal()" type="button">
+<span class="material-symbols-outlined text-body-lg">lock_open</span>
+<span>+ Create Your First Password</span>
+</button>
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg px-space-lg py-space-sm rounded-lg shadow-sm transition-all" onclick="openImportModal()" type="button">
+<span class="material-symbols-outlined text-body-lg text-primary">system_update_alt</span>
+<span>Import from Another Manager</span>
+</button>
+</div>
+<div class="mt-space-lg flex items-center justify-center flex-wrap gap-x-space-md gap-y-2 text-outline font-code-sm text-code-sm">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>Bitwarden</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>1Password (.1pux)</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>Dashlane</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>Chrome / Safari CSV</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>Keepass (.kdbx)</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-code-sm text-code-sm text-primary uppercase tracking-wider font-semibold">Recommended Steps</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">First-Time Setup Protocols</h3>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded">PRD F-04 / F-06</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-md">file_download</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary bg-secondary-container/20 px-space-xs py-0.5 rounded font-medium">Quick Step</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Import Credentials</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Quickly migrate from 1Password, Bitwarden, Apple Keychain, or encrypted CSV in seconds without plaintext exposure.
+              </p>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full flex items-center justify-between bg-surface-container-high hover:bg-surface-bright text-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md transition-colors" onclick="openImportModal()" type="button">
+<span>Start Migration</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-md">extension</span>
+</div>
+<span class="font-code-sm text-code-sm text-primary bg-primary-container/20 px-space-xs py-0.5 rounded font-medium">Autofill Active</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Install Browser Extension</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Enable instant biometric unlock, inline credentials capture, and 1-click token insertion across Chrome, Firefox, and Safari.
+              </p>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full flex items-center justify-between bg-surface-container-high hover:bg-surface-bright text-secondary px-space-md py-space-sm rounded-lg font-label-md text-label-md transition-colors" onclick="alert('Navigating to browser store extension deployment packages...')" type="button">
+<span>Get Extension (v3.4.1)</span>
+<span class="material-symbols-outlined text-body-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-headline-md">enhanced_encryption</span>
+</div>
+<span class="font-code-sm text-code-sm text-error bg-error-container/30 px-space-xs py-0.5 rounded font-medium">Critical</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Verify Recovery Key Backup</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Ensure you have saved your 32-character Crockford Base32 recovery emergency kit. Without it, forgotten keys cannot be reset.
+              </p>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full flex items-center justify-between bg-surface-container-high hover:bg-surface-bright text-on-surface px-space-md py-space-sm rounded-lg font-label-md text-label-md transition-colors" onclick="showRecoveryDrawer()" type="button">
+<span>Inspect Recovery Kit</span>
+<span class="material-symbols-outlined text-body-sm">key_visualizer</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-lg shadow-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-code-sm text-code-sm text-tertiary uppercase tracking-wider font-semibold">Design System Component Registry</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg font-semibold text-on-surface">Blank State Component Suite</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Production-ready empty card abstractions for categorized folders, passkey hubs, and audit trails.</p>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-outline bg-surface-container px-space-md py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-body-sm">code</span>
+<span>export { EmptyPasskeys, EmptyNotes, CleanTrash }</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col items-center text-center shadow-sm relative group overflow-hidden">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-headline-lg">passkey</span>
+</div>
+<span class="font-code-sm text-code-sm text-primary uppercase font-bold tracking-wider mb-1">F-14 Passkeys</span>
+<h4 class="font-headline-md text-headline-md font-semibold text-on-surface">No Passkeys Found</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 max-w-xs">
+            Sync FIDO2 WebAuthn cryptographic pairs for hardware keys like YubiKey or platform passkeys.
+          </p>
+<div class="mt-space-md w-full pt-space-xs">
+<button class="w-full bg-surface-container-high hover:bg-surface-bright text-on-surface py-space-xs px-space-md rounded-lg font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" onclick="alert('Registering device WebAuthn authenticators...')" type="button">
+<span class="material-symbols-outlined text-body-sm">add_moderator</span>
+<span>Register Passkey</span>
+</button>
+</div>
+<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-code-sm text-code-sm bg-surface-container-highest px-1.5 py-0.5 rounded text-outline">React Component</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col items-center text-center shadow-sm relative group overflow-hidden">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-headline-lg">sticky_note_2</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary uppercase font-bold tracking-wider mb-1">F-22 Secure Notes</span>
+<h4 class="font-headline-md text-headline-md font-semibold text-on-surface">Folder is Empty</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 max-w-xs">
+            Store markdown memos, SSH configuration keys, Wi-Fi passwords, or server recovery instructions.
+          </p>
+<div class="mt-space-md w-full pt-space-xs">
+<button class="w-full bg-surface-container-high hover:bg-surface-bright text-on-surface py-space-xs px-space-md rounded-lg font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" onclick="alert('Drafting encrypted secure markdown memo...')" type="button">
+<span class="material-symbols-outlined text-body-sm">note_add</span>
+<span>Add Secure Note</span>
+</button>
+</div>
+<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-code-sm text-code-sm bg-surface-container-highest px-1.5 py-0.5 rounded text-outline">React Component</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col items-center text-center shadow-sm relative group overflow-hidden">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-outline mb-space-md">
+<span class="material-symbols-outlined text-headline-lg">auto_delete</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline uppercase font-bold tracking-wider mb-1">F-89 Recycle Bin</span>
+<h4 class="font-headline-md text-headline-md font-semibold text-on-surface">Trash is Clean</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 max-w-xs">
+            Deleted credentials remain recoverable here for 30 days before zero-fill memory sanitization.
+          </p>
+<div class="mt-space-md w-full pt-space-xs">
+<div class="w-full bg-surface-container-high text-on-surface-variant py-space-xs px-space-md rounded-lg font-label-md text-label-md flex items-center justify-center gap-space-xs select-none">
+<span class="material-symbols-outlined text-body-sm text-secondary">verified</span>
+<span>Zero Trashed Records</span>
+</div>
+</div>
+<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-code-sm text-code-sm bg-surface-container-highest px-1.5 py-0.5 rounded text-outline">React Component</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-body-lg">terminal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">CipherVault Developer CLI Quickstart</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Inject secrets directly into microservices and shell environments</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-lg max-w-full overflow-x-auto">
+<span class="font-code-sm text-code-sm text-primary select-none">$</span>
+<code class="font-code-sm text-code-sm text-on-surface">curl -fsSL https://vault.cipher.dev/install.sh | bash && cipher login</code>
+<button class="text-outline hover:text-on-surface pl-2" onclick="navigator.clipboard?.writeText('curl -fsSL https://vault.cipher.dev/install.sh | bash && cipher login'); this.classList.add('text-secondary'); setTimeout(()=>this.classList.remove('text-secondary'), 1500);" title="Copy CLI Command" type="button">
+<span class="material-symbols-outlined text-body-sm">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-space-md" id="importModal">
+<div class="bg-surface-container rounded-xl max-w-xl w-full p-space-lg shadow-2xl flex flex-col gap-space-md relative">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">system_update_alt</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Import Password Archive</h3>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="closeImportModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Files are decrypted in client-memory and transformed into zero-knowledge CipherVault records. Unencrypted raw secrets are never transmitted.
+      </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="flex items-center gap-space-sm p-space-sm bg-surface-container-high hover:bg-surface-bright rounded-lg text-left" type="button">
+<span class="material-symbols-outlined text-primary">shield</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Bitwarden</span>
+<span class="font-code-sm text-code-sm text-outline">.json (encrypted/plain)</span>
+</div>
+</button>
+<button class="flex items-center gap-space-sm p-space-sm bg-surface-container-high hover:bg-surface-bright rounded-lg text-left" type="button">
+<span class="material-symbols-outlined text-secondary">vpn_key</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">1Password</span>
+<span class="font-code-sm text-code-sm text-outline">.1pux archive</span>
+</div>
+</button>
+<button class="flex items-center gap-space-sm p-space-sm bg-surface-container-high hover:bg-surface-bright rounded-lg text-left" type="button">
+<span class="material-symbols-outlined text-tertiary">dataset</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Chrome / Safari</span>
+<span class="font-code-sm text-code-sm text-outline">standard .csv</span>
+</div>
+</button>
+<button class="flex items-center gap-space-sm p-space-sm bg-surface-container-high hover:bg-surface-bright rounded-lg text-left" type="button">
+<span class="material-symbols-outlined text-outline">folder_zip</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">KeePass</span>
+<span class="font-code-sm text-code-sm text-outline">.kdbx v3/v4</span>
+</div>
+</button>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-lg border-dashed border-2 border-outline/30 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-high/40 transition-colors">
+<span class="material-symbols-outlined text-headline-lg text-primary mb-1">upload_file</span>
+<span class="font-label-lg text-label-lg text-on-surface">Drop archive file here or click to browse</span>
+<span class="font-code-sm text-code-sm text-outline mt-1">AES-GCM client validation before injection</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface bg-surface-container-high hover:bg-surface-bright" onclick="closeImportModal()" type="button">Cancel</button>
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-primary bg-primary hover:bg-primary-fixed" onclick="alert('Client parser triggered.'); closeImportModal();" type="button">Process Import</button>
+</div>
+</div>
+</div>
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-space-md" id="newCredentialModal">
+<div class="bg-surface-container rounded-xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">add_moderator</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Add Secure Item</h3>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="closeNewCredentialModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<div>
+<label class="font-label-md text-label-md text-outline block mb-1">Item Title / Service</label>
+<input class="w-full bg-surface-container-high rounded-lg px-space-md py-space-xs text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright" placeholder="e.g. GitHub Enterprise, AWS Production" type="text"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-outline block mb-1">Username / Identifier</label>
+<input class="w-full bg-surface-container-high rounded-lg px-space-md py-space-xs text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-bright" placeholder="alex.morgan@acme.dev" type="text"/>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="font-label-md text-label-md text-outline">Master Secret / Password</label>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">128-bit Entropy</span>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-high rounded-lg px-space-md py-space-xs text-on-surface font-code-md text-code-md pr-10 focus:outline-none focus:bg-surface-bright" type="password" value="kX8$mP#9920vL-alpha"/>
+<button class="absolute right-space-sm top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-body-sm">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface bg-surface-container-high hover:bg-surface-bright" onclick="closeNewCredentialModal()" type="button">Cancel</button>
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-primary bg-primary hover:bg-primary-fixed" onclick="alert('Encrypted locally with AES-GCM and stored.'); closeNewCredentialModal();" type="button">Encrypt & Save</button>
+</div>
+</div>
+</div>
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-md p-space-md" id="recoveryModal">
+<div class="bg-surface-container rounded-xl max-w-xl w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error">key</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Crockford Base32 Recovery Package</h3>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="closeRecoveryModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        This key is mathematically derived from your argon2id master digest. If lost, no human support operator can recover your vault.
+      </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2 bg-surface-container-lowest p-space-md rounded-lg">
+<div class="p-2 bg-surface-container rounded flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">01</span>
+<span class="font-code-md text-code-md font-semibold text-primary">W7X9-K2L1</span>
+</div>
+<div class="p-2 bg-surface-container rounded flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">02</span>
+<span class="font-code-md text-code-md font-semibold text-primary">90PQ-ZZ41</span>
+</div>
+<div class="p-2 bg-surface-container rounded flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">03</span>
+<span class="font-code-md text-code-md font-semibold text-primary">A82M-N190</span>
+</div>
+<div class="p-2 bg-surface-container rounded flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">04</span>
+<span class="font-code-md text-code-md font-semibold text-primary">FF89-10VK</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface bg-surface-container-high hover:bg-surface-bright" onclick="closeRecoveryModal()" type="button">Dismiss</button>
+<button class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-primary bg-primary hover:bg-primary-fixed" onclick="navigator.clipboard?.writeText('W7X9-K2L1-90PQ-ZZ41-A82M-N190-FF89-10VK'); alert('Recovery phrase copied to clipboard with sanitization queue.'); closeRecoveryModal();" type="button">Copy Raw Package</button>
+</div>
+</div>
+</div>
+<script>
+    function openImportModal() {
+      document.getElementById('importModal')?.classList.remove('hidden');
+    }
+    function closeImportModal() {
+      document.getElementById('importModal')?.classList.add('hidden');
+    }
+    function openNewCredentialModal() {
+      document.getElementById('newCredentialModal')?.classList.remove('hidden');
+    }
+    function closeNewCredentialModal() {
+      document.getElementById('newCredentialModal')?.classList.add('hidden');
+    }
+    function showRecoveryDrawer() {
+      document.getElementById('recoveryModal')?.classList.remove('hidden');
+    }
+    function closeRecoveryModal() {
+      document.getElementById('recoveryModal')?.classList.add('hidden');
+    }
+  </script>
+</div></main></div></body></html>
