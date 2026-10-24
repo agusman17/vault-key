@@ -70,7 +70,9 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
-@theme light {
+html.light {
+  --color-background: #ffffff;
+  --color-on-background: #0f172a;
   --color-surface: #ffffff;
   --color-surface-dim: #f8fafc;
   --color-surface-bright: #f1f5f9;
@@ -79,6 +81,7 @@
   --color-surface-container: #f1f5f9;
   --color-surface-container-high: #e2e8f0;
   --color-surface-container-highest: #cbd5e1;
+  --color-surface-variant: #cbd5e1;
   --color-on-surface: #0f172a;
   --color-on-surface-variant: #334155;
   --color-inverse-surface: #0f172a;
@@ -115,9 +118,6 @@
   --color-tertiary-fixed-dim: #818cf8;
   --color-on-tertiary-fixed: #0f172a;
   --color-on-tertiary-fixed-variant: #4338ca;
-  --color-background: #ffffff;
-  --color-on-background: #0f172a;
-  --color-surface-variant: #cbd5e1;
 }
 
 
